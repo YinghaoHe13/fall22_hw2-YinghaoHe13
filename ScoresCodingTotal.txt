@@ -1,11 +1,11 @@
 Q 1 :  4 / 4 passed | score: 10
-Q 2 :  0 / 25 passed | score: 0.0
+Q 2 :  19 / 25 passed | score: 19.0
 Q 3 :  1 / 1 passed | score: 20
 Q 4 :  0 / 24 passed | score: 0.0
 Q 5 :  0 / 7 passed | score: 0.0
 Q 7 :  0 / 4 passed | score: 0.0
 Q 8 :  8 / 8 passed | score: 15
 -----------------------------------------
-Your total score of coding section: 45.0
+Your total score of coding section: 64.0
 -----------------------------------------
-Sun Oct  2 15:32:36 PDT 2022
+Sun Oct  2 15:37:11 PDT 2022
