@@ -10,11 +10,7 @@
 // 2. Write some unit tests for them in student_test.cc
 int IndexOfFirstSpace(std::string& input)
 {
-<<<<<<< HEAD
-    int n = sizeof(input);
-=======
     int n = input.size();
->>>>>>> 15c965d (change of Q2)
     if (n <= 0)
     {
         return 0;
@@ -31,11 +27,8 @@ int IndexOfFirstSpace(std::string& input)
 
 void SeparateFirstAndLastNames(std::string& full_name, std::string& first_name,std::string& last_name)
 {
-<<<<<<< HEAD
-    int length = sizeof(full_name);
-=======
     int length = full_name.size();
->>>>>>> 15c965d (change of Q2)
+    int length = full_name.size();
     int i = IndexOfFirstSpace(full_name);
     for (int j = 0; j<i; j++)
     {
