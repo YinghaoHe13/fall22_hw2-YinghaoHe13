@@ -8,3 +8,84 @@
 // TODO:
 // 1. Implement the the functions in q.h.
 // 2. Write some unit tests for them in student_test.cc
+int IndexOfFirstSpace(std::string& input)
+{
+    int n = sizeof(input);
+    if (n <= 0)
+    {
+        return 0;
+    }
+    int res = 0;
+    while (res<n)
+    {
+        if (input[res] == ' ')
+        {
+            break;
+        }
+        res ++;
+    }
+    return res;
+}
+
+void SeparateFirstAndLastNames(std::string& full_name, std::string& first_name,std::string& last_name)
+{
+    int length = sizeof(full_name);
+    int i = IndexOfFirstSpace(full_name);
+    for (int j = 0; j<i; j++)
+    {
+        first_name.push_back(full_name[j]);
+    }
+    for (int k = 0; k<length-1;k++)
+    {
+        last_name.push_back(full_name[k]);
+    }
+    return;
+}
+
+int NumberOfVowels(std::string& input)
+{
+    int res = 0;
+    int n = input.length();
+    if (n <= 0)
+    {
+        return 0;
+    }
+    for (int i = 0;i < n; i++)
+    {
+        if (input[i] == 'A' || input[i] == 'a' || input[i] == 'E' || input[i] == 'e' ||input[i] == 'I' || input[i] == 'i' ||input[i] == 'O' || input[i] == 'o' ||input[i] == 'U' || input[i] == 'u')
+        {
+            res ++;
+        }
+    }
+    return res;
+}
+
+int NumberOfConsonants(std::string& input)
+{
+    int res = input.length();
+    int n = input.length();
+    if (n <= 0)
+    {
+        return 0;
+    }
+    for (int i = 0;i < n; i++)
+    {
+        if (input[i] == 'A' || input[i] == 'a' || input[i] == 'E' || input[i] == 'e' ||input[i] == 'I' || input[i] == 'i' ||input[i] == 'O' || input[i] == 'o' ||input[i] == 'U' || input[i] == 'u')
+        {
+            res --;
+        }
+    }  
+    return res; 
+}
+
+int Reverse(std::string& input)
+{
+    std::string s;
+    int n = input.length();
+    for (int i = 0;i < n;i++)
+    {
+        s.push_back(input[n-1-i]);
+    }
+    input = s;
+    return 0;
+}

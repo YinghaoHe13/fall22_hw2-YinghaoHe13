@@ -15,18 +15,25 @@ void Question1() {
   const int number_of_items = 10;
 
   // Initializing the elements vector.
-  for (int i = 0; i < number_of_items; i++) {
-    int element;
-    elements[i] = 0;
+  for (auto i:elements) {
+    int element = 0;
+    if (element ==10)
+    {
+      break;
+    }
+    i = 0;
+    element++;
   }
 }
 
 void Question2() {
   int* a;
-  (*a) = 12;
+  int b =12;
+  a = &b;
   (*a)++;
   std::cout << "(*a): " << (*a) << std::endl;
 }
+
 
 void Question3() {
   int* a = new int;
@@ -54,8 +61,9 @@ void Question4() {
 void Question5() {
   for (int i = 0; i < 10; i++) {
     std::cout << "i: " << i << std::endl;
-    i = i - 1;
-    std::cout << "i: " << i << std::endl;
+    //i = i - 1;
+    int temp;
+    std::cout << "i: " << temp << std::endl;
   }
 }
 

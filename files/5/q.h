@@ -10,7 +10,7 @@
 // Answer these questions in the README file.
 // Question 1: Why did we have to provide size_1, size_2 as an input?
 // Question 2: How can we know the size of the output?
-int* Concatenate(int* array_1, int size_1, int* array_2, int size_2);
+int* Concatenate1(int* array_1, int size_1, int* array_2, int size_2);
 //-----------------------------------------------------------------------------
 // Concatenate two dynamic vectors.
 // Example:
@@ -19,5 +19,5 @@ int* Concatenate(int* array_1, int size_1, int* array_2, int size_2);
 // Output: {1, 2, 2, 3, 4}.
 // Question 1: Why didn't we provide the sizes?
 // Question 2: We have two functions with the name of Concatenate. Is this ok?
-std::vector<int> Concatenate(std::vector<int>& vector_1,
+std::vector<int> Concatenate2(std::vector<int>& vector_1,
                              std::vector<int>& vector_2);
