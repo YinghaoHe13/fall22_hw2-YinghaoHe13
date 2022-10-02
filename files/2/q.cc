@@ -10,26 +10,32 @@
 // 2. Write some unit tests for them in student_test.cc
 int IndexOfFirstSpace(std::string& input)
 {
+<<<<<<< HEAD
     int n = sizeof(input);
+=======
+    int n = input.size();
+>>>>>>> 15c965d (change of Q2)
     if (n <= 0)
     {
         return 0;
     }
-    int res = 0;
-    while (res<n)
+    for (int i=0; i< n; i++)
     {
-        if (input[res] == ' ')
+        if(input[i] == ' ')
         {
+            return i;
             break;
         }
-        res ++;
     }
-    return res;
 }
 
 void SeparateFirstAndLastNames(std::string& full_name, std::string& first_name,std::string& last_name)
 {
+<<<<<<< HEAD
     int length = sizeof(full_name);
+=======
+    int length = full_name.size();
+>>>>>>> 15c965d (change of Q2)
     int i = IndexOfFirstSpace(full_name);
     for (int j = 0; j<i; j++)
     {
@@ -45,7 +51,7 @@ void SeparateFirstAndLastNames(std::string& full_name, std::string& first_name,s
 int NumberOfVowels(std::string& input)
 {
     int res = 0;
-    int n = input.length();
+    int n = input.size();
     if (n <= 0)
     {
         return 0;
@@ -62,8 +68,8 @@ int NumberOfVowels(std::string& input)
 
 int NumberOfConsonants(std::string& input)
 {
-    int res = input.length();
-    int n = input.length();
+    int res = input.size();
+    int n = input.size();
     if (n <= 0)
     {
         return 0;
@@ -81,7 +87,7 @@ int NumberOfConsonants(std::string& input)
 int Reverse(std::string& input)
 {
     std::string s;
-    int n = input.length();
+    int n = input.size();
     for (int i = 0;i < n;i++)
     {
         s.push_back(input[n-1-i]);
