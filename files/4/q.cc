@@ -8,13 +8,6 @@
 // TODO:
 // 1. Implement the the functions in q.h.
 // 2. Write some unit tests for them in student_test.cc
-enum class ErrorCode {
-  kNoError,
-  kPopFromEmptyVector,
-  // If there is an attempt to access an invalid index
-  kIndexError,
-  kNotFound
-};
 
   // Creates an empty vector.
 MyVector::MyVector()
@@ -109,7 +102,6 @@ int MyVector::pop_front()
     return -1;
   }
   int* new_data = new int[size_-1];
-  int res = data_[0];
   for (int i = 0; i < size_; i++)
   {
     new_data[i] = data_[i+1];
@@ -123,7 +115,7 @@ int MyVector::pop_front()
   // vector.
 void MyVector::insert(int value, int index)
 {
-  if (index != -1 && index <0 ||index > size_ -1)
+  if (index != -1 && (index <0 ||index > size_ -1))
   {
     error_ = ErrorCode::kIndexError;
   }
